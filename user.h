@@ -23,6 +23,9 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+int hw(void); // my hw sys call
+int fkc(int val); // prints amount of forks
+
 
 // ulib.c
 int stat(const char*, struct stat*);
