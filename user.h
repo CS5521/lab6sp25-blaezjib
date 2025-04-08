@@ -24,7 +24,7 @@ char* sbrk(int);
 int sleep(int);
 int uptime(void);
 int hw(void); // my hw sys call
-int fkc(int val); // prints amount of forks
+int fkc(int); // prints amount of forks
 
 
 // ulib.c

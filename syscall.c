@@ -104,7 +104,7 @@ extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_hw(void); // my hw sys call
-extern int sys_fkc(int val); // my hw sys call
+extern int sys_fkc(void); // my fkc sys call
 
 
 

@@ -102,7 +102,15 @@ sys_hw(void)
 }
 
 int
-sys_fkc(int val) 
+sys_fkc(void) 
 {
+  int val;
+  argint(0, &val);            // set arg
+  if(val == 0) {              // checks arg
+    cprintf("val %d\n", val);
+    fork_counter = 0;         // set fork_counter to 0
+    return 0;                 // return 0
+  }
+
   return fork_counter;
 }
